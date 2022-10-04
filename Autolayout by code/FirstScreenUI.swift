@@ -29,7 +29,7 @@ final class FirstScreenUI: UIView {
     private var customButton: UIButton = {
         var buttonConfiguration = UIButton.Configuration.filled()
         buttonConfiguration.title = "Get a Quote"
-        buttonConfiguration.subtitle = "Just tap"
+
         
         let button = UIButton(type:  .system)
         button.addTarget(self, action: #selector(showMessge), for: .touchUpInside)
@@ -70,11 +70,11 @@ final class FirstScreenUI: UIView {
             simpsonLogo.centerXAnchor.constraint(equalTo: centerXAnchor),  // centrado en la vista
             simpsonLogo.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
             simpsonLogo.heightAnchor.constraint(equalToConstant: 300),
-            
             simpsonLogo.widthAnchor.constraint(equalToConstant: 300),
+            
             customButton.centerXAnchor.constraint(equalTo: centerXAnchor), // centrado en la vista
             customButton.centerYAnchor.constraint(equalTo: centerYAnchor),
-            customButton.heightAnchor.constraint(equalToConstant: 80),
+            customButton.heightAnchor.constraint(equalToConstant: 40),
             customButton.widthAnchor.constraint(equalToConstant: 200),
             
             
